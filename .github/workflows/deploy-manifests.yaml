@@ -9,7 +9,7 @@ on:
 
 jobs:
   generate-and-deploy:
-    runs-on: self-hosted  # Uses your homelab runner
+    runs-on: container-gitops-runners  # Uses the ARC runner scale set
     name: Generate Manifests and Trigger ArgoCD
 
     steps:
